@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .section-title {
+    @apply md:text-5xl text-3xl font-semibold text-title capitalize leading-[120%];
+  }
+  .section-description {
+    @apply text-xl  text-paragraph leading-relaxed;
+  }
+}
+
+.product-description ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: disc;
+}
+
+.product-description p {
+  color: #475467;
+  margin-top: 24px;
+  margin-bottom: 26px;
+  display: flex;
+}
+
+.product-description ul li b {
+  color: #000;
+}

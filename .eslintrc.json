@@ -1,0 +1,15 @@
+{
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "rules": {
+    "no-console": ["warn", { "allow": ["warn", "error"] }],
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "vars": "all", // Check all variables
+        "varsIgnorePattern": "^_", // Ignore variables starting with '_'
+        "args": "after-used", // Check arguments that are used after being declared
+        "argsIgnorePattern": "^_" // Ignore function arguments starting with '_'
+      }
+    ]
+  }
+}
